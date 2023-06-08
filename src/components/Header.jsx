@@ -12,7 +12,7 @@ export default function Header() {
               to={"/"}
               className={({ isActive }) =>
                 `${classes.header_link} ${
-                  isActive ? classes.header_link___active : null
+                  isActive ? classes.header_link___active : ''
                 }`
               }
               end
@@ -25,7 +25,7 @@ export default function Header() {
               to={"/about"}
               className={({ isActive }) =>
                 `${classes.header_link} ${
-                  isActive ? classes.header_link___active : null
+                  isActive ? classes.header_link___active : ''
                 }`
               }
             >

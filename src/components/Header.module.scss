@@ -27,7 +27,7 @@
         color: v.$main-color;
         text-decoration: none;
     }
-    &___active {
+    &___active, &:hover {
         text-decoration: underline;
     }
   }
