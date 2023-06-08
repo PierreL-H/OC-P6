@@ -13,8 +13,6 @@ const Banner = (props) => {
       break;
   }
 
-  console.log(bannerClass)
-  console.log(text)
   return (
     <div className={bannerClass}>
       <img src={src} alt="" />
