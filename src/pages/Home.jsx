@@ -12,7 +12,6 @@ export default function Home() {
         src={BannerImg}
       />
       <Logements logements={logements} />
-      <Footer />
     </div>
   );
 }

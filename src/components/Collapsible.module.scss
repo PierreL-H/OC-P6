@@ -1,0 +1,51 @@
+@use "../variables" as v;
+
+.Container {
+  margin: 0;
+
+  &_Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px 24px 10px 15px;
+    background-color: v.$main-color;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    & h3 {
+      margin: 0;
+      font-weight: 500;
+    }
+    & button {
+      background: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &_Chevron___rotate {
+    transition: all 0.2s ease-in-out;
+    &.down {
+      transform: rotate(180deg);
+    }
+    &.up {
+      transform: rotate(360deg);
+    }
+  }
+  &_Children {
+    background-color: #f6f6f6;
+    overflow: hidden;
+    border-radius: 0px 0px 5px 5px;
+    transition: height 0.2s ease-in-out;
+    &_Content {
+        padding: 20px;
+        font-size: 1.125rem;
+        color: v.$main-color;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    }
+  }
+}

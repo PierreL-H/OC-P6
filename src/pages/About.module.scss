@@ -1,0 +1,11 @@
+.Content {
+    max-width: 1023px;
+    margin: auto;
+}
+
+.Collapsible {
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 40px;
+    }
+}
