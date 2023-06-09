@@ -2,7 +2,6 @@ import Banner from "../components/Banner";
 import BannerImg from "../assets/images/banner-img-about.jpg";
 import Collapsible from "../components/Collapsible";
 import classes from "./About.module.scss";
-import Footer from "../components/Footer";
 export default function About() {
   return (
     <div className={classes.Body}>
