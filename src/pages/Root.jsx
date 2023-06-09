@@ -1,11 +1,17 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-
-export default function RootLayout(){
-    return <>
-    <Header />
-    <Outlet></Outlet>
-   <Footer /> 
+import classes from "./Root.module.scss"
+export default function RootLayout() {
+  return (
+    <>
+      <div className={classes.Wrapper}>
+        <Header />
+        <div className={classes.Content}>
+          <Outlet></Outlet>
+        </div>
+      <Footer />
+      </div>
     </>
+  );
 }
