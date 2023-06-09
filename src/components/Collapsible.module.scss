@@ -39,13 +39,13 @@
     border-radius: 0px 0px 5px 5px;
     transition: height 0.2s ease-in-out;
     &_Content {
-        padding: 20px;
-        font-size: 1.125rem;
-        color: v.$main-color;
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+      padding: 20px;
+      font-size: 1.125rem;
+      color: v.$main-color;
+      ul {
+        list-style: none;
+        padding: 0;
+      }
     }
   }
 }
