@@ -12,6 +12,9 @@ const LogementPage = () => {
   useEffect(() => {
     !logement && navigate("not-found");
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   console.log(logement);
 
   return (
