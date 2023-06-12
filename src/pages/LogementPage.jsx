@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import Slideshow from "../components/Slideshow";
 import classes from "./LogementPage.module.scss";
+import LogementDetails from "../components/LogementDetails";
 
 const LogementPage = () => {
   const params = useParams();
@@ -16,7 +17,7 @@ const LogementPage = () => {
   return (
     <div className={classes.Content}>
       <Slideshow images={logement.pictures} />
-      <p>{logement.title}</p>
+      <LogementDetails logement={logement} />
     </div>
   );
 };
