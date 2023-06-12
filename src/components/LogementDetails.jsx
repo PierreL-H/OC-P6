@@ -1,7 +1,7 @@
 import classes from "./LogementDetails.module.scss";
 import Rating from "./Rating";
 import Tags from "./Tags";
-import Collapsible from "./Collapsible"
+import Collapsible from "./Collapsible";
 
 const LogementDetails = ({ logement }) => {
   //   console.log("name: ", logement.title);
@@ -24,14 +24,22 @@ const LogementDetails = ({ logement }) => {
         <div className={classes.host_block}>
           <div className={classes.host}>
             <span>{logement.host.name}</span>
-            <img src={logement.host.picture} alt="" />
-            <Rating rating={logement.rating} />
+            <img
+              src={logement.host.picture}
+              alt=""
+              className={classes.host_picture}
+            />
           </div>
+          <Rating rating={logement.rating} />
         </div>
       </div>
       <div className={classes.description_block}>
-        <Collapsible title="Description" children={logement.description}/>
-        <Collapsible title="Équipements" children={logement.equipments}/>
+        <div className={classes.collapsible_container}>
+          <Collapsible title="Description" children={logement.description} />
+        </div>
+        <div className={classes.collapsible_container}>
+          <Collapsible title="Équipements" children={logement.equipments} />
+        </div>
       </div>
     </div>
   );

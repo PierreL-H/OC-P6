@@ -1,17 +1,59 @@
+@use "../variables" as v;
 .Container {
   margin-top: 30px;
-  & h1,p { margin: 0;}
+  & h1,
+  p {
+    margin: 0;
+  }
+  & h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+  & p {
+    font-size: 1.125rem;
+  }
 
   & .top_block {
     display: flex;
+    color: v.$main-color;
+    justify-content: space-between;
     & .title_block {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-
+      justify-content: space-between;
+    }
+    & .host_block {
+      display: flex;
+      gap: 25px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      .host {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-end;
+        span {
+            font-size: 1.125rem;
+        }
+        .host_picture {
+          height: 64px;
+          width: 64px;
+          border-radius: 50%;
+        }
+      }
     }
   }
   .host_block {
     display: flex;
+  }
+
+  .description_block{
+    margin-top: 26px;
+    display: flex;
+    gap: 75px;
+    margin-bottom: 50px;
+  }
+  .collapsible_container{
+    flex: 1 1 40%;
   }
 }
