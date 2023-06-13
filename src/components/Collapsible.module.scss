@@ -13,9 +13,16 @@
     font-size: 1.5rem;
     color: #fff;
     font-weight: 500;
+
+    @media screen and (max-width: 450px) {
+      padding: 10px;
+    }
     & h3 {
       margin: 0;
       font-weight: 500;
+      @media screen and (max-width: 450px) {
+        font-size: 0.813rem;
+      }
     }
     & button {
       background: none;
@@ -23,10 +30,16 @@
       margin: 0;
       padding: 0;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   &_Chevron___rotate {
     transition: all 0.2s ease-in-out;
+    @media screen and (max-width: 450px) {
+      width: 16px;
+    }
     &.down {
       transform: rotate(180deg);
     }
@@ -43,6 +56,9 @@
       padding: 20px;
       font-size: 1.125rem;
       color: v.$main-color;
+      @media screen and (max-width: 450px) {
+        font-size: 0.75rem;
+      }
       ul {
         list-style: none;
         padding: 0;

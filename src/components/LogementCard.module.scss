@@ -9,6 +9,13 @@
   max-width: 340px;
   aspect-ratio: 1;
 
+  @media screen and (max-width: 450px){
+    max-width: unset;
+   max-height: unset; 
+    width: 100%;
+    aspect-ratio: 67 / 51;
+  }
+
   &::before {
     content: "";
     position: absolute;

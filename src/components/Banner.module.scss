@@ -1,11 +1,18 @@
 .Container {
-  position:relative;
+  position: relative;
   text-align: center;
   border-radius: 25px;
   overflow: hidden;
   margin: 55px auto 40px;
   max-width: 1240px;
   height: 223px;
+
+  @media screen and (max-width: 450px) {
+    margin-top: 27px;
+    margin-bottom: 22px;
+    height: 111px;
+    border-radius: 10px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -24,17 +31,26 @@
     position: absolute;
     font-weight: 500;
     width: 100%;
-    margin:0;
+    margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 3rem;
+    color: #fff;
+    font-size: 3rem;
+    @media screen and (max-width: 450px) {
+      font-size: 1.5rem;
+      padding: 16px;
+      box-sizing: border-box;
+      text-align: left;
+    }
   }
   &___home {
     background-color: #f7f7f7;
   }
   &___about {
     background-color: #f7f7f7;
+    @media screen and (max-width: 450px){
+      height: 223px;
+    }
   }
 }
