@@ -6,7 +6,10 @@ export default function RootLayout() {
   return (
     <>
       <div className={classes.Wrapper}>
+        <div className={classes.Header}>
+
         <Header />
+        </div>
         <main className={classes.Content}>
           <Outlet></Outlet>
         </main>

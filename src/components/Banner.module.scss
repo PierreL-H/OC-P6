@@ -7,7 +7,7 @@
   max-width: 1240px;
   height: 223px;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 640px) {
     margin-top: 27px;
     margin-bottom: 22px;
     height: 111px;
@@ -37,7 +37,7 @@
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 3rem;
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 640px) {
       font-size: 1.5rem;
       padding: 16px;
       box-sizing: border-box;
@@ -49,7 +49,7 @@
   }
   &___about {
     background-color: #f7f7f7;
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 640px){
       height: 223px;
     }
   }
